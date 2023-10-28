@@ -4,7 +4,6 @@ import (
 	"flag"
 	"fmt"
 	"gopkg.in/yaml.v2"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"strings"
@@ -56,7 +55,7 @@ func main() {
 		return
 	}
 
-	data, err := ioutil.ReadFile(*configPath)
+	data, err := os.ReadFile(*configPath)
 	if err != nil {
 		fmt.Println("Error reading YAML file:", err)
 		return
