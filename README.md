@@ -48,6 +48,12 @@ project_structure:
 ## Contributing
 Feel free to open issues or PRs if you have suggestions or bug reports.
 
+## Ideas for Future Development
+   - We can support the templates for the created files. For example; inside the yaml file
+     we can define the template for the go.mod file and the tool can generate the go.mod file
+        with the given template.
+
+
 ## License
 MIT
 # config2fs
