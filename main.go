@@ -47,11 +47,11 @@ func createStructure(basePath string, structure map[string]interface{}) error {
 }
 
 func main() {
-	configPath := flag.String("config_path", "", "Path to the configuration file")
+	configPath := flag.String("path", "", "Path to the configuration file")
 	flag.Parse()
 
 	if *configPath == "" {
-		fmt.Println("Please provide a config_path.")
+		fmt.Println("Please provide a path.")
 		return
 	}
 

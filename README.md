@@ -18,7 +18,7 @@ Config2FS is a CLI tool written in Go that allows you to generate file system st
 1. Create a YAML file describing your desired file system structure.
 2. Run the tool using:
     ```
-    go run main.go --config_path=/path/to/your/config.yaml
+    go run main.go --path=/path/to/your/config.yaml
     ```
 
 ## Example Config
