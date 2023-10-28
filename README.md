@@ -25,18 +25,24 @@ Config2FS is a CLI tool written in Go that allows you to generate file system st
 Here's an example YAML configuration:
 
 ```yaml
-project_name: template-project
+project_name: my-project
 project_type: monorepo
-project_path: /your/directory/path
+project_path: /your/project/directory
 project_structure:
-  file:Dockerfile: []
-  file:Makefile: []
-  cmd:
-    handlers:
-        - file:email_collector_handler.go
-        - file:sms_collector_handler.go
-        - file:main.go
-file:go.mod: []
+   file:Dockerfile: []
+   file:Makefile: []
+   cmd:
+      user-service:
+         handlers:
+            file:user_profile_handler.go: []
+            file:user_login_handler.go: []
+         file:main.go: []
+      payment-service:
+         handlers:
+            file:payment_handler.go: [ ]
+         file:main.go: [ ]
+   file:go.mod: []
+
 ```
 
 ## Contributing
